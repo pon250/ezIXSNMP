@@ -15,10 +15,10 @@ PowerShellスクリプト1本で動作します。
 
 ■ 動作確認環境
 
-OS       ：Windows 11
+OS       ：Windows 11(標準powershell 5.1)
 ルーター ：NEC UNIVERGE IX2106
 ファーム ：Ver.10.9.35
-接続方式：PPPoE（動作確認済み）
+接続方式：PPPoE
 
 上記以外の機種・環境での動作は未確認です。
 機種・ファームウェア・ネットワーク構成によっては、取得できない情報があります。
@@ -32,8 +32,8 @@ VLAN、IPsec、VPN、セキュリティソフトなどを利用している環�
 ■ 準備するもの
 
 ・Windows 11
-・PowerShell 5.1以上
-・SNMPに対応したNEC IXシリーズルーター
+・PowerShell 5.1 (現状、PowerShell 7では動作しません)
+・NEC UNIVERGE IXシリーズルーター
 ・ルーターのIPアドレス
 ・SNMPコミュニティ名
 
@@ -61,7 +61,7 @@ snmp-agent ip community IxMon_7aQ!29zR# view open-view
 
 ※ SNMP v2cのコミュニティ名は暗号化されません。アクセス元を必要なPCに制限し、インターネットなど外部に不用意に公開しないでください。
 
-■ PS1側の設定
+■ owerShellスクリプト(PS1)側の設定
 
 ezIXSNMP.ps1 をテキストエディターで開き、冒頭の User settings を確認します。
 
