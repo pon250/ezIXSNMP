@@ -45,7 +45,8 @@ Speedtestでは良い数字が出ているのに、通信が引っかかる。�
 ## 必要なもの
 
 - Windows 11
-- Windows PowerShell 5.1以上
+- Windows PowerShell 5.1
+ (現状、PowerShell 7では動作しません)
 - SNMPに対応したNEC IXシリーズルーター
 - ルーターのIPアドレス
 - SNMPコミュニティ名
